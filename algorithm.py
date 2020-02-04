@@ -15,22 +15,8 @@ def linear_search(List,item):#Time complexity for linear search is o(n)
         if i == item:
             return True
     return False
-def sum(list):
-    sumTotal = 0
-    for item in list:#o(n)
-        sumTotal += item #o(1)
-    return sumTotal
-def sum_Rec(list):
-    if len(list) < 1    :
-        return 0
-    return list[0] + sum_Rec(list[1:])#linear recursion o(1) * (n+1) = o(n)
-
-
-
-    
 
 if __name__ == '__main__':
-
     list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
     print('Before Insertion sort: ', list)
     insertion_sort(list)
@@ -44,8 +30,6 @@ if __name__ == '__main__':
     bol = linear_search(list,55)
     print("It is in our list: ",bol)
 
-    print("Normal: ",sum(list))
-    print("Recursion: ",sum_Rec(list))
     # Output:
     # Before:  [54, 26, 93, 17, 77, 31, 44, 55, 20]
     # After:  [17, 20, 26, 31, 44, 54, 55, 77, 93]
