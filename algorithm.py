@@ -72,6 +72,16 @@ def is_leap(year):
     return leap
 #simple control flow to determintes whether a year provied is a leap year
 #if a year modulo 4 == 0, year module 100  == 0 and a year modulo 400 
+#Bubble Sort Time Complexity => n^2
+def bubbleSort(lis):
+    for i in range(len(lis)-1):
+        for j in range(len(lis)-i-1):
+            if(lis[j]>lis[j+1]):
+                lis[j],lis[j+1] = lis[j+1],lis[j]
+                #swaping two elements if current element is great than next element.
+    return lis
+
+
 if __name__ == '__main__':
 
     list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
@@ -98,13 +108,5 @@ if __name__ == '__main__':
     print("\n")
     
    # Hello World program in Python
-#Bubble Sort Time Complexity => n^2
-def bubbleSort(lis):
-    for i in range(len(lis)-1):
-        for j in range(len(lis)-i-1):
-            if(lis[j]>lis[j+1]):
-                lis[j],lis[j+1] = lis[j+1],lis[j]#swaping two elements if current element is great than next element.
-    return lis
-
-lis = [7,6,5,4,3,2,1]
-print(bubbleSort(lis))
+   lis = [7,6,5,4,3,2,1]
+   print(bubbleSort(lis))
