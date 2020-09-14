@@ -96,3 +96,15 @@ if __name__ == '__main__':
     print(string)
     reverseRecursion(string)
     print("\n")
+    
+   # Hello World program in Python
+#Bubble Sort Time Complexity => n^2
+def bubbleSort(lis):
+    for i in range(len(lis)-1):
+        for j in range(len(lis)-i-1):
+            if(lis[j]>lis[j+1]):
+                lis[j],lis[j+1] = lis[j+1],lis[j]#swaping two elements if current element is great than next element.
+    return lis
+
+lis = [7,6,5,4,3,2,1]
+print(bubbleSort(lis))
