@@ -57,22 +57,7 @@ def reverseRecursion(str):
 # Slice is very powerful
 
 
-def is_leap(year):
-    leap = False
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year %% 400:
-                leap = True
-            else
-                leap = False
-        else
-            leap = True
-    else
-        leap = False
-    return leap
-#simple control flow to determintes whether a year provied is a leap year
-#if a year modulo 4 == 0, year module 100  == 0 and a year modulo 400 
-#Bubble Sort Time Complexity => n^2
+
 def bubbleSort(lis):
     for i in range(len(lis)-1):
         for j in range(len(lis)-i-1):
@@ -106,7 +91,10 @@ if __name__ == '__main__':
     print(string)
     reverseRecursion(string)
     print("\n")
-    
+    print("Bubble Sort: Time Complexity n^2\n")
+    print("lis = [7,6,5,4,3,2,1]")
+    print
+    lis = [7,6,5,4,3,2,1]
+    print(bubbleSort(lis))
    # Hello World program in Python
-   lis = [7,6,5,4,3,2,1]
-   print(bubbleSort(lis))
+
