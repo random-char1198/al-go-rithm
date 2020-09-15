@@ -66,6 +66,13 @@ def bubbleSort(lis):
                 #swaping two elements if current element is great than next element.
     return lis
 
+def fib(n):
+    if(n == 0):
+        return 0
+    elif(n == 1):
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
 
 if __name__ == '__main__':
 
