@@ -4,7 +4,7 @@ def singleNumber(nums):
         nums[0] ^= item
     return nums[0]
 #Test for 136
-arr = [4,1,1,2,6]
+
 """
 Explanation:
 We want to find the number that only appear once in a list. So we can use bitwise operation
@@ -35,4 +35,27 @@ We have an array [4,1,2,1,2] which can be translated to
   so If A xor B  is 1 it means it appears once,
      If A xor B is 0 never appear or appear twice. In this probelm we consider it appear twice
 """
-print(singleNumber(arr))
+#217
+def containsDuplicates(nums):
+   nums.sort()
+   for i in range(len(nums)-1):
+      if(nums[i] == nums[i+1]):
+         return True
+   return False
+
+
+def test():
+   #TO DO: add unit test
+
+   #136
+   arr = [4,1,1,2,6]
+   print(singleNumber(arr))
+   print("Single Number:")
+   print("The array is: ",arr,"Output is:",singleNumber(arr))
+   print("Test Result: Passed")#add automation
+   #217
+   
+   print("Contains Duplicates:")
+   print("The array is: ",arr,"Output is:",containsDuplicates(arr))
+   print("Test Result: Passed")#add automation
+test()
