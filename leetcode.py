@@ -42,6 +42,10 @@ def containsDuplicates(nums):
       if(nums[i] == nums[i+1]):
          return True
    return False
+def containsDuplicatesSet(nums):
+   return len(nums) != len(set(nums))
+   # Just use Set data structure and it will automitically removes duplicates
+   # If there are not duplicates we will return true which means they are no duplicates
 
 
 def test():
@@ -49,7 +53,6 @@ def test():
 
    #136
    arr = [4,1,1,2,6]
-   print(singleNumber(arr))
    print("Single Number:")
    print("The array is: ",arr,"Output is:",singleNumber(arr))
    print("Test Result: Passed")#add automation
@@ -57,5 +60,9 @@ def test():
    
    print("Contains Duplicates:")
    print("The array is: ",arr,"Output is:",containsDuplicates(arr))
+   print("Test Result: Passed")#add automation
+
+   print("Contains Duplicates Set:")
+   print("The array is: ",arr,"Output is:",containsDuplicatesSet(arr))
    print("Test Result: Passed")#add automation
 test()
