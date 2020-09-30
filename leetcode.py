@@ -47,6 +47,15 @@ def containsDuplicatesSet(nums):
    # Just use Set data structure and it will automitically removes duplicates
    # If there are not duplicates we will return true which means they are no duplicates
 
+def removeDuplicates(nums):
+   #iteration way
+   nums.sort() #first we need to sort them
+   for i in range(len(nums)-1):
+      if(nums[i] == nums[i+1]):
+         nums.pop(i)
+
+a = [1,1,1,2,3,4]
+print(removeDuplicates(a))
 
 def test():
    #TO DO: add unit test
@@ -65,4 +74,3 @@ def test():
    print("Contains Duplicates Set:")
    print("The array is: ",arr,"Output is:",containsDuplicatesSet(arr))
    print("Test Result: Passed")#add automation
-test()
