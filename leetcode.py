@@ -57,6 +57,14 @@ def removeDuplicates(nums):
 a = [1,1,1,2,3,4]
 print(removeDuplicates(a))
 
+# def reverseLinkedList(Lis):
+#    prev = None
+#    while head:
+#       tmp = head.next#Store tmp variable
+#       head.next = prev# We want to reverse the referecne.1 -> 2 (1.next is 2 right?) We want to make it 2->1(2->next 1)
+#       prev = head#Assign head to prev
+#       head = tmp#Assign new nead
+   
 def test():
    #TO DO: add unit test
 
@@ -74,3 +82,7 @@ def test():
    print("Contains Duplicates Set:")
    print("The array is: ",arr,"Output is:",containsDuplicatesSet(arr))
    print("Test Result: Passed")#add automation
+
+
+### TO DO
+#Linked List
