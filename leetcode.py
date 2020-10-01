@@ -47,16 +47,17 @@ def containsDuplicatesSet(nums):
    # Just use Set data structure and it will automitically removes duplicates
    # If there are not duplicates we will return true which means they are no duplicates
 
-def removeDuplicates(nums):
-   #iteration way
-   nums.sort() #first we need to sort them
-   for i in range(len(nums)-1):
-      if(nums[i] == nums[i+1]):
-         nums.pop(i)
+# def removeDuplicates(nums):
+#    #iteration way
+#    nums.sort() #first we need to sort them
+#    for i in range(len(nums)-1):
+#       if(nums[i] == nums[i+1]):
+#          nums.pop(i)
 
-a = [1,1,1,2,3,4]
-print(removeDuplicates(a))
+# a = [1,1,1,2,3,4]
+# print(removeDuplicates(a))
 
+# 262
 # def reverseLinkedList(Lis):
 #    prev = None
 #    while head:
@@ -64,7 +65,17 @@ print(removeDuplicates(a))
 #       head.next = prev# We want to reverse the referecne.1 -> 2 (1.next is 2 right?) We want to make it 2->1(2->next 1)
 #       prev = head#Assign head to prev
 #       head = tmp#Assign new nead
-   
+
+
+#509 fib
+def fib(n):
+   if n < 2:
+      return n
+   else:
+      return fib(n-1) + fib(n-2)
+print(fib(1))
+print(fib(2))
+print(fib(6))
 def test():
    #TO DO: add unit test
 
@@ -85,4 +96,5 @@ def test():
 
 
 ### TO DO
+#Unit Test
 #Linked List
