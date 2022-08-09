@@ -12,5 +12,6 @@ class Solution:
                 n = tmp
         return False
 
+
 solution = Solution()
 print(solution.isHappy(2))
