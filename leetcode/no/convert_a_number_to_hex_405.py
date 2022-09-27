@@ -5,7 +5,7 @@ class Solution:
         if num == 0:
             return '0'
         if num < 0:
-            num = (abs(num) ^ ((2 ** 32) - 1)) + 1
+            num = (abs(num) ^ (2 ** 32 - 1)) + 1
             res = ''
             while num > 0:
                 res = res + dic[num % 16]
