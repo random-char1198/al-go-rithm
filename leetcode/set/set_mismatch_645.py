@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution:
     def findErrorNums(self, nums: list[int]) -> list[int]:
         dic = defaultdict()
@@ -9,7 +11,7 @@ class Solution:
             else:
                 dic[nums[i]] += 1
         # print(dic)
-        for i in range(1,len(nums)+1,1):
+        for i in range(1, len(nums) + 1, 1):
             if i not in dic:
                 res[1] = i
             elif dic[i] == 2:
