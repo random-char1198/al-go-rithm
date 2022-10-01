@@ -1,6 +1,6 @@
 from collections import defaultdict
 class Solution:
-    def findErrorNums(self, nums: List[int]) -> List[int]:
+    def findErrorNums(self, nums: list[int]) -> list[int]:
         dic = defaultdict()
         res = [-1] * 2
         for i in range(len(nums)):
