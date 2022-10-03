@@ -1,3 +1,4 @@
+# 1784
 class Solution:
     def checkOnesSegment(self, s: str) -> bool:
         pointer = 0
