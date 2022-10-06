@@ -10,4 +10,4 @@ class Solution:
         else:
             return len(s)
         # else
-        # return min(len(set(candyType)), len(candyType) // 2)
+        # return min(len(hashset(candyType)), len(candyType) // 2)

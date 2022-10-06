@@ -13,7 +13,7 @@ class Solution:
             return
         else:
             if node.val not in self.s:
-                # if not in s, add to set
+                # if not in s, add to hashset
                 self.s.add(node.val)
             self.dfs(node.left)
             self.dfs(node.right)
