@@ -10,7 +10,7 @@ class Solution:
                 res = cnt
             else:
                 res &= cnt
-        return list(res.elements())
+        return sorted(list(res.elements()))
 
 
 s = Solution()
