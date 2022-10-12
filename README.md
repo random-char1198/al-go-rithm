@@ -1,1 +1,1 @@
-# It a place where I implement algorithms
+# al-go-rithm
